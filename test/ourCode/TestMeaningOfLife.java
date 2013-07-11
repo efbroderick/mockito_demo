@@ -27,7 +27,7 @@ public class TestMeaningOfLife {
     }
 
     @Test
-    public void meaningOfLifeShouldShouldRevealAnswerWhenZenServiceIsAvailable() throws ServiceUnavailableException {
+    public void meaningOfLifeShouldRevealAnswerWhenZenServiceIsAvailable() throws ServiceUnavailableException {
         when(mockZenService.getUltimateAnswer()).thenReturn(10);
         assertThat(meaningOfLife.reveal(), is(10));
     }
