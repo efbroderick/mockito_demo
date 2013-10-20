@@ -1,5 +1,7 @@
 ## Generated files
 out
+build
+.gradle
 ##
 ## IntelliJ IDEA specific files
 .idea/
