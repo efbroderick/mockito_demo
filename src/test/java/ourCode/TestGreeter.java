@@ -18,10 +18,10 @@ import org.powermock.modules.junit4.PowerMockRunner;
 public class TestGreeter {
     @Test
     public void greetShouldCallStaticMethod() {
-	mockStatic(StaticMethods.class);
-	when(StaticMethods.greet(anyString())).thenReturn("return value does not matter");
-	(new Greeter()).greet("Friend");
-	verifyStatic();
-	StaticMethods.greet("Friend");
+      mockStatic(StaticMethods.class);
+      when(StaticMethods.greet(anyString())).thenReturn("return value does not matter");
+      (new Greeter()).greet("Friend");
+      verifyStatic();
+      StaticMethods.greet("Friend");
     }
 }
