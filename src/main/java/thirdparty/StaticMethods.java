@@ -7,6 +7,6 @@ public class StaticMethods {
     private static final Random random = new Random();
 
     public static String greet(String name) {
-	return salutations[random.nextInt(4)] + ", " +  name + "!";
+      return salutations[random.nextInt(4)] + ", " +  name + "!";
     }
 }
