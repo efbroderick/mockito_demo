@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/saleem/mockito_demo.svg?branch=master)](https://travis-ci.org/saleem/mockito_demo)
+
 mockito_demo
 ============
 
