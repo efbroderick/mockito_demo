@@ -11,11 +11,11 @@ public class MeaningOfLife {
 
     public int reveal() throws ServiceUnavailableException {
         int possibleAnswer = zenService.getUltimateAnswer();
-        if (possibleAnswer == Integer.MAX_VALUE) throw new ServiceUnavailableException("ZenService returned unreliable answer");
+        if (possibleAnswer == Integer.MAX_VALUE) throw new ServiceUnavailableException("ZenService returned unreliable answer. Please try again.");
         return possibleAnswer;
     }
 
     public static void main(String[] args) throws ServiceUnavailableException {
-        System.out.printf("The meaning of life is ...\n%d", new MeaningOfLife(new ZenService()).reveal());
+        System.out.printf("The meaning of life is difficult to discern ...\n%d", new MeaningOfLife(new ZenService()).reveal());
     }
 }
